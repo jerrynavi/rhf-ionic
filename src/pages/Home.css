@@ -1,0 +1,33 @@
+.app-input ion-label {
+  display: block;
+  margin-bottom: 0.5rem !important;
+  font-size: 0.875rem !important;
+}
+
+.app-input ion-input,
+.app-input ion-textarea {
+  --placeholder-font-weight: 500;
+  --placeholder-opacity: 0.7;
+  --padding-start: 1rem;
+  --padding-top: 1rem;
+  --padding-bottom: 1rem;
+}
+
+.app-input ion-textarea {
+  min-height: rem(52);
+  max-height: rem(75);
+}
+
+.app-input ion-text.error {
+  display: block;
+  transform: translateY(-10px);
+  animation: slideOut 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideOut {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
